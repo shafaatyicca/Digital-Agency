@@ -1,19 +1,101 @@
 /* Bootstrap dark theme tuned to the original palette */
-[data-bs-theme=dark]{--bs-body-bg:#000;--bs-tertiary-bg:#0f0f11;--bs-secondary-color:#acacac;--bs-link-color-rgb:255,255,255}
-.theme{background:linear-gradient(95deg,#059dff 15%,#6549d5 45%,#e33fa1 75%,#fb5343 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.mybtn{background:linear-gradient(95deg,#059dff 15%,#6549d5 45%,#e33fa1 75%,#fb5343 100%) 95%/200% 100%;border:0;border-radius:8px;transition:box-shadow .5s}
-.mybtn:hover{box-shadow:1px 1px 15px #e26cb3;color:#fff}
-.gradient-circle{position:fixed;width:min(500px,80vw);aspect-ratio:1;border-radius:50%;opacity:.2;filter:blur(100px);z-index:-1;pointer-events:none}
-.blue-theme{left:-250px;top:250px;background:linear-gradient(#059dff,#36c6f0)}
-.pink-theme{right:-250px;top:-250px;background:linear-gradient(#fb5343,#6549d5)}
-.navbar{transition:background-color .3s}
-@media(max-width:767.98px){#menu.show,#menu.collapsing{background:#0f0f11;border-radius:.75rem;padding:0 1rem;margin-top:.5rem}}
-.lift,.port-img{transition:transform .5s}
-.lift:hover{transform:translateY(-4px)}
-.lift:hover .port-img{transform:scale(1.07)}
-.arrow-btn{transition:all .5s}
-.carousel-control-prev:hover .arrow-btn{background:#059dff;transform:translateX(-10px)}
-.carousel-control-next:hover .arrow-btn{background:#059dff;transform:translateX(10px)}
-.ring{background:conic-gradient(#059dff calc(var(--p)*1%),#1e1e1e 0)}
-.footer-bg{background:linear-gradient(0deg,#000,rgba(15,15,17,.6))}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+[data-bs-theme="dark"] {
+  --bs-body-bg: #000;
+  --bs-tertiary-bg: #0f0f11;
+  --bs-secondary-color: #acacac;
+  --bs-link-color-rgb: 255, 255, 255;
+}
+.theme {
+  background: linear-gradient(
+    95deg,
+    #059dff 15%,
+    #6549d5 45%,
+    #e33fa1 75%,
+    #fb5343 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mybtn {
+  background: linear-gradient(
+      95deg,
+      #059dff 15%,
+      #6549d5 45%,
+      #e33fa1 75%,
+      #fb5343 100%
+    )
+    95%/200% 100%;
+  border: 0;
+  border-radius: 8px;
+  transition: box-shadow 0.5s;
+}
+.mybtn:hover {
+  box-shadow: 1px 1px 15px #e26cb3;
+  color: #fff;
+}
+.gradient-circle {
+  position: fixed;
+  width: min(500px, 80vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+.blue-theme {
+  left: -250px;
+  top: 250px;
+  background: linear-gradient(#059dff, #36c6f0);
+}
+.pink-theme {
+  right: -250px;
+  top: -250px;
+  background: linear-gradient(#fb5343, #6549d5);
+}
+.navbar {
+  transition: background-color 0.3s;
+}
+@media (max-width: 767.98px) {
+  #menu.show,
+  #menu.collapsing {
+    background: #0f0f11;
+    border-radius: 0.75rem;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+  }
+}
+.lift,
+.port-img {
+  transition: transform 0.5s;
+}
+.lift:hover {
+  transform: translateY(-4px);
+}
+.lift:hover .port-img {
+  transform: scale(1.07);
+}
+.arrow-btn {
+  transition: all 0.5s;
+}
+.carousel-control-prev:hover .arrow-btn {
+  background: #059dff;
+  transform: translateX(-10px);
+}
+.carousel-control-next:hover .arrow-btn {
+  background: #059dff;
+  transform: translateX(10px);
+}
+.ring {
+  background: conic-gradient(#059dff calc(var(--p) * 1%), #1e1e1e 0);
+}
+.footer-bg {
+  background: linear-gradient(0deg, #000, rgba(15, 15, 17, 0.6));
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
